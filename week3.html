@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Activity</title>
+    <style>
+        #welcomeMessage {
+            display: none;
+        }
+        div{
+            padding-left: 10px;
+            padding-top: 20px;
+            height: 500px;
+            width: 600px;
+            color: rgb(22, 75, 121);
+            background-color: aquamarine;
+           
+           margin-left: 500px;
+           margin-top: 50px;
+           border-radius: 10px;
+           border: 3px solid brown;
+           background-image: url(1.jpg);
+      
+        }
+       
+        label{
+            font-size: 30px;
+            height: 200px;
+            color: aliceblue;
+        }
+        button{
+            border-radius: 10px;
+            justify-content: center;
+            transition: 3ms;
+            font-size: 25px;
+            color:#000;
+            background-color: aqua;
+            width: 150px;
+            height: 50px;
+        }
+        button:hover{
+        
+            border-color: azure;
+        }
+        input{
+            height: 50px;
+            width: 400px;
+            border-radius: 10px;
+            font-size: 30px;
+            color: blueviolet;
+        } 
+        input:hover{
+            border-color: aqua;
+        }
+        #welcomeMessage{
+            height: 100px;
+            width: 300px;
+            color: rgb(255, 0, 34);
+            font-size: 30px;
+            font-style: italic;
+            padding: 50px;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+<form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br> <br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required>
+
+    <br> <br>
+
+    <button type="button" onclick="validateForm()">Submit</button>
+</form>
+</div>
+<div id="welcomeMessage">
+    <p>Welcome! Thank you for submitting the form.</p>
+</div>
+
+<script>
+    function validateForm() {
+      
+        var nameField = document.getElementById("name");
+        if (nameField.value.trim() === "") {
+            alert("Name field cannot be empty");
+            return;
+        }
+
+        
+        var emailField = document.getElementById("email");
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailField.value)) {
+            alert("Invalid email address");
+            return;
+        }
+
+      
+        var passwordField = document.getElementById("password");
+        if (passwordField.value.length < 8) {
+            alert("Password must be at least 8 characters long");
+            return;
+        }
+
+        
+        setTimeout(function() {
+            document.getElementById("welcomeMessage").style.display = "block";
+        }, 1000); 
+
+     
+       
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideimage</title>
+</head>
+<body>
+    <div>
+        <img name="slide" width="80%" height="900px">
+    </div>
+    <script>
+        var i = 0;
+        var images = Array();
+        images[0] = '1.jpg';
+        images[1] =  '2.jpg'; // Corrected file extension
+        images[2] = '3.jpg';    // Corrected index
+        images[3] =  '4.jpg';
+        images[4] = '5.jpg';    // Corrected index
+        images[5] = '6.jpg';
+        images[6] = '7.jpg';
+        images[7] = '8.jpg';
+
+        function changeImage() {
+            document.getElementsByName('slide')[0].src = images[i]; // Corrected the attribute name
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            setTimeout(changeImage, 1000);
+        }
+        changeImage();
+
+    </script>
+</body>
+</html>

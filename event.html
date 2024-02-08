@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    background-color: aqua;
+    height: 1700px;
+    width: 400px;
+}
+img{
+    padding-left: 20px;
+    padding-top:20px;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <img src="1.jpg" height="300" width="300" onclick="genle()">
+    <img src="1.jpg" height="300" width="300" onmouseover="genle1()">
+    <img src="1.jpg" height="300" width="300" onmousedown="genle2()">
+    <img src="1.jpg" height="300" width="300" onmouseup="genle3()">
+    <img src="1.jpg" height="300" width="300" onmouseleave="genle4()">
+
+    
+</div>
+<form>
+    <input type="text" onkeydown="genle()">
+</form>
+    <script>
+        function genle(){
+            alert("you have clicked image");
+        }
+        function genle1(){
+            alert("you have clicked image1");
+        }
+        function genle2(){
+            alert("you have clicked image2");
+        }
+        function genle3(){
+            alert("you have clicked image3");
+        }
+
+        function genle4(){
+            alert("you have clicked image4");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 20px;
+    }
+    input{
+        height: 50px;
+        width: 500px;
+        font-size: 20px;
+        color: rgb(17, 113, 198);
+        
+    }
+    
+    text{
+        font-size: 50px;
+    }
+</style>
+<body>
+    <form>
+        <input type="text" id="text" onkeypress="key()">
+        <input type="text" id="text" onkeyup="key1()">
+    </form>
+    <script>
+        function key(){
+            document.getElementById("text").style.backgroundColor="blue";
+        }
+        function key1(){
+            document.getElementById("text").style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>
