@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Box</title>
+    <script  type="text/javascript">
+        function show_prompt(){
+            var name= prompt("please enter your name:"," satya kumar");
+            if(name!=null && name!="")
+            {
+                document.write("hello"+name+"How are you today");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" onclick="show_prompt" value="Show prompt box"/>
+</body>
+</html>
