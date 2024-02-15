@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+//         let student={}
+//            student.name="satya",
+//             student.class="twelve",
+//             student.id=12203506,
+//             student.phno=9559385211
+//             student.mark=2345;
+        
+//          console.log(student);
+//         // console.log(student["name"]);
+
+//         // let employee={name:"rahul",id:123}
+//         // employee.id=
+//         console.log(student.name+" brearing roll no "+student.id+" has scored "+student.mark);
+//         console.log(`${student.name}brearing roll no ${student.id} has scored ${student.mark}`);
+// 
+
+//constructor function
+function stu(name,roll,marks){
+    this.name=name;
+    this.roll=roll;
+    this.marks=marks;
+}
+let student=new stu("satya",12,23);
+console.log(student.name);
+console.log(student.roll);
+console.log(student.marks);
+
+let student1=new stu("mohan",12,43);
+console.log(student1.name);
+console.log(student1.roll);
+console.log(student1.marks);
+
+    </script>
+</body>
+</html>

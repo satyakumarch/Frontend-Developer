@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+
+<!-- //provide a starting code base that intertionally include various error (syntax error,refereence error,type of error range error);
+//include scenarios where errords may occues due to usetr input data processing ot other common programming task; -->
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,4 +42,101 @@
 <body>
     <input type="button" value="View message" onclick="message()"/>
 </body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = 10;
+    a = a + b;
+    console.log(a);
+    console.log("This is my line")
+    
+    try {
+        let a = 10;
+        a = a + b;
+        console.log(a);
+        console.log("This is my line")
+    } catch (error) {
+        console.log("Are you okay")
+        console.log(error)
+    }
+    console.log("This is my line 2")
+    
+    
+        </script>
+
+    
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling Example</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Input Processing with Error Handling</h2>
+    <div id="error-msg" class="error"></div>
+    <form id="user-input-form">
+        <label for="num1">Enter a number:</label>
+        <input type="text" id="num1" name="num1">
+        <br>
+        <label for="num2">Enter another number:</label>
+        <input type="text" id="num2" name="num2">
+        <br>
+        <button type="button" onclick="processInput()">Calculate Sum</button>
+    </form>
+
+    <script>
+        function processInput() {
+            // Fetching user input
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+
+            // Parsing input to numbers
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            // Checking if input is valid
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('error-msg').innerText = 'Please enter valid numbers';
+                return;
+            }
+
+            // Performing the calculation
+            let sum = num1 + num2;
+
+            // Displaying the result
+            document.getElementById('error-msg').innerText = '';
+            alert('The sum is: ' + sum);
+        }
+    </script>
+</body>
+</html> -->
