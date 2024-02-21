@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doms class</title>
+</head>
+<p class="p1">Welcome</p>
+<p class="p2">to</p>
+<p id="p3">lpu</p>
+<body>
+<script>
+var a=document.getElementById("p3");
+a.innerText="lovely professioanal university";
+
+
+var ele=document.getElementsByClassName("p1");
+for(i=0;i<ele.length;i++){
+    ele[i].innerText="hello";
+}
+var b=document.querySelector('p');
+b.innerText="hello";
+</script>
+</body>
+</html>

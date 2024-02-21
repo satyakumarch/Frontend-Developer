@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var div = document.createElement('div');
+        div.style.background="aqua";
+        div.style.height = "50px";
+        div.style.width = "100%";
+        div.style.display = "flex";
+        div.style.justifyContent ="Center";
+        div.style.border ="1px solid black"
+       var para = document.createElement('p');
+        para.innerText = "Welcome to Html Tutorial";
+        document.body.appendChild(div);
+        div.appendChild(para);
+
+        var div1 = document.createElement('div1');
+        div1.style.background="aqua";
+        div1.style.height = "400px";
+        div1.style.width = "100%";
+        div1.style.display = "flex";
+        div1.style.justifyContent ="auto";
+        div1.style.border = "1px solid black";
+        var para = document.createElement('p');
+        para.innerText = "";
+        document.body.appendChild(div1);
+        div1.appendChild(para);
+
+        var div2 = document.createElement('div2');
+        div2.style.background="red";
+        div2.style.height = "400px";
+        div2.style.width = "50%";
+        div2.style.display = "flex";
+        div2.style.justifyContent ="left";
+        div2.style.border = "1px solid black";
+        var para = document.createElement('p');
+        para.innerText = "";
+        //document.body.appendChild(div2);
+        div2.appendChild(para)
+        div1.appendChild(div2); 
+
+        var div3 = document.createElement('div3');
+        var button = document.createElement('button');
+        button.height = "300px";
+
+
+        button.style.color = "yellow";
+        div3.style.background="blue";
+        div3.style.height = "400px";
+        div3.style.width = "50%";
+        div3.style.display = "flex";
+        div3.style.justifyContent ="Center";
+        div3.style.border = "1px solid black";
+        var para = document.createElement('p');
+        para.innerText = "";
+        document.body.appendChild(div3);
+        div1.appendChild(div3);
+        div3.appendChild('button');
+
+
+    </script>
+</body>
+</html>
