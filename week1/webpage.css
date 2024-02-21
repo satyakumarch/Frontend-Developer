@@ -17,7 +17,7 @@ nav{
     z-index: 12;
 }
 nav .menu{
-    font-size: 80px;
+    font-size: 20px;
    padding-right: 300px;
     margin: auto;
     display: flex;
@@ -31,7 +31,7 @@ nav .menu{
     padding-left: 300px;
     text-decoration: none;
     color: #0af0f0;
-    font-size: 70px;
+    font-size: 20px;
     font-weight: 600;
     margin-left:-25px;
 }
@@ -85,12 +85,12 @@ nav .menu{
 }
 .center .title{
     color: #fff;
-    font-size: 120px;
+    font-size: 40px;
     font-weight: 600;
 }
 .center .Sub-title{
     color: #fff;
-    font-size: 100px;
+    font-size: 25px;
     font-weight: 600;
     color:rgb(174, 230, 20);
 }
@@ -99,13 +99,13 @@ nav .menu{
 
 }
 .center .btns button{
-    height: 150px;
-    width: 300px;
+    height: 50px;
+    width: 100px;
     border-radius: 5px;
     border: none;
     margin: 0 10px;
     border: 2px solid rgb(127, 18, 18);
-    font-size: 40px;
+    font-size: 10px;
     font-weight: 500;
     font-style:oblique;
     padding: 0  10px;
