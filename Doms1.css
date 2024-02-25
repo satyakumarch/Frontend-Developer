@@ -1,0 +1,63 @@
+
+/*1 add friend feature with same button*/
+/* *{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box ;
+    font-family: 'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+#card{
+    border-radius: 10px;
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+
+
+}
+#card img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+
+}
+#card  h1{
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: 700;
+}
+#card h5{
+    font-size: 25px;
+    color: red;
+    margin:20px ;
+}
+#card button{
+    background-color: rgb(89, 130, 117);
+    color: white;
+    font-weight: 700px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+} */
+/* #card #remove{
+    background-color: rgb(157, 232, 245);
+    color: black;
+
+} */
+
+/*1 add friend feature with same button*/
