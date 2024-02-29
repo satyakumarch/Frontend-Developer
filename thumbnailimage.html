@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+</head>
+<style>
+    body{
+        margin-left:450px ;
+    }
+    img{
+        border-radius: 10px;
+        border: 2px solid red;
+
+    }
+</style>
+<body>
+    <img id="mainImg" style="border: 3px solid grey" src="1.jpg" height="500px" width="500px";
+    <br>
+    <div id="divid" onclick="changeImageOnClick()" onmouseover="f1()" onmouseout="f2()">
+    <img id="2" class="imgStyle" src="2.jpg" height="100px" width="100px">
+    <img id="3" class="imgStyle" src="3.jpg" height="100px" width="100px" >
+<img id="4" class="imgStyle" Src="4.jpg" height="100px" width="100px">
+<img id="5" class="imgStyle" Src="5.jpg" height="100px" width="100px">
+<img id="5" class="imgStyle" Src="6.jpg" height="100px" width="100px">
+
+
+    </div>
+    <script type="text/javascript">
+        function changeImageOnClick()
+        {
+            var x=event.target;
+            if(x.tagName=="IMG")
+            {
+                a=x.getAttribute("src");
+                document.getElementById("mainImg").setAttribute('src',a)
+            }
+        }
+        function f1()
+        {
+            x.event.target;
+            x.style.cursor='pointer';
+            // x.style.border="5px solid red";
+            // x.style.borderRadius="10px";
+            
+        }
+
+    </script>
+    
+</body>
+</html>

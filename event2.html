@@ -62,13 +62,15 @@
        function ab(){
         a.style.border="15px solid blue "
         a.style.transform='rotate(360deg)';
+        a.style.transition='2s'
         a.style.backgroundColor="white";
        }
 
        b.addEventListener("click",xy,true);
        function xy(){
         b.style.border="15px solid red "
-        a.style.transform='rotate(360deg)';
+        b.style.transform='rotate(360deg)';
+        b.style.transition='2s'
 
         b.style.backgroundColor="green";
        }
@@ -77,6 +79,8 @@
        function pq(){
         c.style.border="15px solid black "
         c.style.backgroundColor="aqua";
+        c.style.transform='rotateX(360deg)';
+        c.style.transition='2s'
        }
 
 
