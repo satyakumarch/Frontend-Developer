@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event2</title>
+</head>
+<body>
+    <div id="abc">
+       
+        <div id="id1">
+      
+
+            <div id="id2">
+                This is a container
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const a=document.getElementById("abc");
+       a.style.height="500px";
+       a.style.width="500px";
+       a.style.color="black";
+       a.style.backgroundColor="blue";
+       a.style.border="15px solid orange "
+       a.style.borderRadius="10px"
+       a.style.fontSize="30px"
+       a.style.alignItems="center";
+       a.style.paddingTop="50px";
+       a.style.textAlign="center";
+    a.style.margin="50%";
+       
+
+       const b=document.getElementById("id1");
+       b.style.height="300px";
+       b.style.width="300px";
+       b.style.color="black";
+       b.style.backgroundColor="yellow";
+       b.style.border="15px solid aqua "
+       b.style.borderRadius="10px"
+       b.style.fontSize="30px"
+       b.style.alignItems="center";
+       b.style.paddingTop="50px";
+       b.style.margin="20%";
+       
+
+       const c=document.getElementById("id2");
+       c.style.height="100px";
+       c.style.width="200px";
+       c.style.color="black";
+       c.style.backgroundColor="brown";
+       c.style.border="15px solid white "
+       c.style.borderRadius="10px"
+       c.style.fontSize="30px"
+       c.style.alignItems="center";
+       c.style.paddingTop="50px";
+       c.style.margin="20px"
+
+
+       a.addEventListener("click",ab,true);
+       function ab(){
+        a.style.border="15px solid blue "
+        a.style.transform='rotate(360deg)';
+        a.style.backgroundColor="white";
+       }
+
+       b.addEventListener("click",xy,true);
+       function xy(){
+        b.style.border="15px solid red "
+        a.style.transform='rotate(360deg)';
+
+        b.style.backgroundColor="green";
+       }
+
+       c.addEventListener("click",pq,true);
+       function pq(){
+        c.style.border="15px solid black "
+        c.style.backgroundColor="aqua";
+       }
+
+
+
+
+
+
+
+
+// var z=0;
+//         div.addEventListener("click",abc);
+// function event()
+// {
+//     if(z==0){
+//     div.style.backgroundColor="red";
+//     div.style.borderColor="green";
+//     z=1;
+//     }
+//     else{
+//         div.style.backgroundColor="blue";
+//         div.style.borderColor="orange";
+//         z=0;
+//     }
+// }
+
+// var z=0;
+//         div.addEventListener("click",id1);
+// function event()
+// {
+//     if(z==0){
+//     div.style.backgroundColor="green";
+//     div.style.borderColor="yellow";
+//     z=1;
+//     }
+//     else{
+//         div.style.backgroundColor="red";
+//         div.style.borderColor="white";
+//         z=0;
+//     }
+// }
+
+
+// var z=0;
+//         div.addEventListener("mouseleave",abc);
+// function event()
+// {
+//     if(z==0){
+//     div.style.backgroundColor="red";
+//     div.style.borderColor="green";
+//     z=1;
+//     }
+//     else{
+//         div.style.backgroundColor="blue";
+//         div.style.borderColor="orange";
+//         z=0;
+//     }
+// }
+
+
+ 
+    </script>
+
+</script>
+</body>
+</html>
