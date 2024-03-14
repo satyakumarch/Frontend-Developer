@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <script src="jquery-3.7.1.min.js"></script>
+   
+</head>
+<body>
+    <div id="d1">
+    <form id="signInForm">
+        <h2>Sign In</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button id="b1"> signInForm</button>
+    </form>
+</div>
+    <script>
+        $(document).ready(function(){
+         var a=$("#d1").css("font-size","20px", "color","red");
+         var a=$("#d1").css("color","red");
+         var a=$("#d1").css("backgroundColor","yellow");
+         var a=$("#password,#email,#username").css("backgroundColor","lightblue");
+         var a=$("#password,#email,#username").css("height","25px");
+         var a=$("#password,#email,#username").css("border-radius","10px");
+         var a=$("#b1").css("color","blue");
+         var a=$("#b1").css("height","40px");
+         var a=$("#b1").css("width","120px");
+         var a=$("#b1").css("backgroundColor","gray");
+
+         var a=$("#b1").css("fontSize","20px");
+
+            $("#signInForm").submit(function(event) {
+                event.preventDefault();
+                var username = $("#username").val();
+                alert("Welcome, your username is " + username);
+            });
+        });
+    </script>
+</body>
+</html>
