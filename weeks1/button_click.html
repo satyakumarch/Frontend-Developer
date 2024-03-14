@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+        <button id="b1">Button</button>
+        
+   
+    <div >
+        <p id="p1">Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Quas, accusantium?</p>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $("#b1").css("height","100px")
+        $("#b1").css("width","100px")
+        $("#b1").css("border","5px solid green")
+        $("#b1").css("border-radius","10px")
+        
+        $("#b1").css("display","flex")
+        $("#b1").css("justify-content","center")
+
+
+        $("#b1").click(function() {
+            $(this).css("background-color", "yellow");
+            
+        });
+    });
+    $(document).ready(function(){
+        $("#p1").css("height","100px")
+        $("#p1").css("width","200px")
+
+        $("#p1").hover(function() {
+            $(this).css("background-color", "red");
+            $(this).css("fontSize","20px");
+            $(this).text("hello everyone i am satya");
+        
+            
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="d1">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+
+
+        </ul>
+        <p id="p1">Welcome to lpu</p>
+        <p id="p2">Welcome to punjab</p>
+        <p id="p3">Welcome to Indai</p>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script >
+        $(document).ready(function(){
+         var a=$("#p1").css("font-size","100px", "color","red");
+         var a=$("#p1").css("color","red");
+         var a=$("#p1").css("backgroundColor","yellow");
+         var a=$("#p1").css("border-radius","20px");
+         var a=$("#p1").css("border","3px solid green");
+
+         var b=$("#p2").css("font-size","100px");
+         var b=$("#p3").css("color","red");
+         var b=$("#p2").css("backgroundColor","blue");
+
+         $("ul li :even").css("color","red");
+         $("ul li :odd").css("color","red");
+         
+            // var a=$("#p1").html();
+            // alert(a);
+        })
+    </script>
+</body>
+</html>
