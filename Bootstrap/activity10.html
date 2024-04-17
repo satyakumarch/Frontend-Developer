@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Elements Extravaganza</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Additional CSS for fixed navigation */
+    body {
+      padding-top: 56px; /* Adjust based on the height of your header */
+      background-color: #f8f9fa; /* Light gray background */
+    }
+    @media (min-width: 992px) {
+      body {
+        padding-top: 0;
+      }
+    }
+    /* Header styles */
+    .navbar {
+      background-color: #007bff; /* Bootstrap primary color */
+    }
+    .navbar-brand {
+      color: #fff;
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #d4d4d4;
+    }
+    /* Main content styles */
+    h1 {
+      color: #495057; /* Dark gray */
+    }
+    p {
+      color: #6c757d; /* Bootstrap secondary color */
+    }
+    /* Footer styles */
+    footer {
+      background-color: #343a40; /* Bootstrap dark color */
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Website Title/Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Menu Item 1</a></li>
+              <li><a class="dropdown-item" href="#">Menu Item 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1>Main Content Section</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <!-- Content continues -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Your Website Name</p>
+  </footer>
+  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
