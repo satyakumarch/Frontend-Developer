@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: rgb(205, 151, 236);
+  }
+  
+  input, textarea {
+    color: rgb(16, 20, 20);
+    background-color: aquamarine;
+    font-size: 14px;
+    font-weight: 900;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect width */
+  }
+  
+  button {
+    background-color: #5cb85c; /* Bootstrap 'success' green */
+    color: white;
+    padding: 10
+  }
