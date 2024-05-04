@@ -1,46 +1,24 @@
-// import { bootstrapApplication } from '@angular/platform-browser';
-// import { appConfig } from './app/app.config';
-// import { AppComponent } from './app/app.component';
+document.getElementById('uploadForm')?.addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Create a FormData object to hold the form data
+  const formData = new FormData(this as HTMLFormElement);
 
-// bootstrapApplication(AppComponent, appConfig)
-//   .catch((err) => console.error(err));
-// Reactive Forms Section
-import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+  // TODO: Replace with the URL of your server-side endpoint
+  const uploadUrl = 'https://your-server.com/upload';
 
-@Component({
-  selector: 'app-fusion-fiesta',
-  templateUrl: './fusion-fiesta.component.html',
-  styleUrls: ['./fusion-fiesta.component.css']
-})
-export class FusionFiestaComponent {
-  // Reactive form setup
-  feedbackForm = new FormGroup({
-    userName: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    userEmail: new FormControl('', [Validators.required, Validators.email]),
-    userFeedback: new FormControl('', [Validators.required])
+  // Send the form data to the server
+  fetch(uploadUrl, {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+    // Refresh the user list or handle success
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    // Handle errors here
   });
-
-  // Template-driven form model
-  templateForm = {
-    feedbackRating: 0,
-    optionalComment: ''
-  };
-
-  // Combined output
-  combinedFeedback: string = '';
-
-  // Method to display combined feedback
-  displayFeedback(): void {
-    const reactiveFormFeedback = `Name: ${this.feedbackForm.value.userName}, Email: ${this.feedbackForm.value.userEmail}, Feedback: ${this.feedbackForm.value.userFeedback}`;
-    const templateFormFeedback = `Rating: ${this.templateForm.feedbackRating}, Comment: ${this.templateForm.optionalComment}`;
-    this.combinedFeedback = `${reactiveFormFeedback}\n${templateFormFeedback}`;
-  }
-
-  // Method to handle form submission
-  onSubmit(): void {
-    this.displayFeedback();
-    // Transform feedback to uppercase using Angular pipe
-    this.combinedFeedback = this.combinedFeedback.toUpperCase();
-  }
-}
+});

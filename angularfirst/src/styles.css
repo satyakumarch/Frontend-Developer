@@ -1,38 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Form Styles */
+.upload-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #dce9a4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid red;
+}
+
+.upload-form label {
+  font-size: 25px;
+
+  display: block;
+  margin-bottom: 10px;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="email"],
+.upload-form input[type="file"] {
+  font-size: 20px;
   
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 30px auto;
-    background-color: rgb(205, 151, 236);
-  }
-  
-  input, textarea {
-    color: rgb(16, 20, 20);
-    background-color: aquamarine;
-    font-size: 14px;
-    font-weight: 900;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #c2eff5;
+  border: 2px solid black;
+}
+
+.upload-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0078d7;
+  color: rgb(0, 11, 15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.upload-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+.user-list {
+  margin-top: 20px;
+}
+
+.user-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list th,
+.user-list td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-list th {
+  background-color: #0078d7;
+  color: #9b5252;
+}
+
+.user-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
+.user-list button {
+  background-color: #0078d7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.user-list button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .user-list table,
+  .upload-form {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box; /* Makes sure padding doesn't affect width */
+    display: block;
+    overflow-x: auto;
   }
-  
-  button {
-    background-color: #5cb85c; /* Bootstrap 'success' green */
-    color: white;
-    padding: 10
-  }
+}

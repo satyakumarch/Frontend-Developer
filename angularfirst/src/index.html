@@ -1,44 +1,40 @@
-<!-- <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Angularfirst</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
-</html> -->
-<!-- Reactive Forms Section -->
+~
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>User List and Details</title>
 </head>
 <body>
-  <form [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
-    <input type="text" formControlName="userName" placeholder="Name"><br><br>
-    <input type="email" formControlName="userEmail" placeholder="Email"><br><br>
-    <textarea formControlName="userFeedback" placeholder="Your Feedback"></textarea><br><br>
-    <button type="submit" [disabled]="!feedbackForm.valid">Submit Feedback</button>
-  </form>
+  <h2>User Profiles</h2>
   
-  <!-- Template-Driven Forms Section -->
-  <form #templateDrivenForm="ngForm">
-    <input type="number" [(ngModel)]="templateForm.feedbackRating" name="feedbackRating" placeholder="Rating" min="1" max="5"><br><br>
-    <input type="text" [(ngModel)]="templateForm.optionalComment" name="optionalComment" placeholder="Optional Comment">
+  <!-- Form to upload user profile -->
+  <form id="uploadForm" class="upload-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="role">Role:</label>
+    <input type="text" id="role" name="role" required>
+
+    <label for="profilePicture">Profile Picture:</label>
+    <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+    <button type="submit">Upload Profile</button>
   </form>
-  
-  <!-- Combined Output and Interaction -->
-  <div *ngIf="combinedFeedback">
-    <!-- <p>Preview:</p>
-    <p>{{ combinedFeedback }}</p> -->
+
+  <div id="userList" class="user-list">
+ 
   </div>
+
   <script src="main.ts"></script>
 </body>
 </html>
