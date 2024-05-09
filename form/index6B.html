@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+<script>
+function validateInput() {
+  var num1 = document.getElementById('number1').value;
+  var num2 = document.getElementById('number2').value;
+  var regex = /^-?\d+$/;
+
+  if (!num1.match(regex) || !num2.match(regex)) {
+    alert("Please enter valid integers.");
+    return false;
+  }
+  return true;
+}
+
+function performOperation(operation) {
+  if (validateInput()) {
+    var num1 = parseInt(document.getElementById('number1').value, 10);
+    var num2 = parseInt(document.getElementById('number2').value, 10);
+    var result = 0;
+    switch(operation) {
+      case 'add':
+        result = num1 + num2;
+        break;
+      case 'subtract':
+        result = num1 - num2;
+        break;
+      case 'multiply':
+        result = num1 * num2;
+        break;
+    }
+    alert("The result is: " + result);
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<form id="calcForm">
+
+  <label for="number1">Number 1:</label><br>
+  <input type="text" id="number1" name="number1" required><br><br>
+  <label for="number2">Number 2:</label><br>
+  <input type="text" id="number2" name="number2" required><br><br>
+  <input type="button" value="Addition" onclick="performOperation('add')">
+  <input type="button" value="Subtraction" onclick="performOperation('subtract')">
+  <input type="button" value="Multiplication" onclick="performOperation('multiply')">
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<script>
+function validateForm() {
+  var name = document.forms["regForm"]["name"].value;
+  var mobile = document.forms["regForm"]["mobile"].value;
+  var mobileRegex = /^[0-9]{10}$/;
+
+  if (name == "" || mobile == "") {
+    alert("Name and mobile number must be filled out");
+    return false;
+  }
+
+  if (!mobile.match(mobileRegex)) {
+    alert("Mobile number must be a 10-digit number");
+    return false;
+  }
+
+  return true;
+}
+</script>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form name="regForm" onsubmit="return validateForm()" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="mobile">Mobile No:</label><br>
+  <input type="text" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
