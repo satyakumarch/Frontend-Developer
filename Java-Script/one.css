@@ -1,0 +1,16 @@
+h1{
+    color: rgb(229, 255, 0);
+    background-color: blue;
+}
+body{
+    background-color: burlywood;
+}
+button{
+    color: rgb(16, 16, 16);
+    font-size: 20px;
+    font-style: oblique;
+    color: darkgoldenrod;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    height: 40px;
+}
