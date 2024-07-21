@@ -1,4 +1,4 @@
-h1{
+/* h1{
     color: rgb(229, 255, 0);
     background-color: blue;
 }
@@ -13,4 +13,15 @@ button{
     background-color: deepskyblue;
     border-radius: 10px;
     height: 40px;
+}
+h4{
+    background-color: blueviolet;
+} */
+
+.content{
+    color: red;
+
+}
+.newClass{
+    background-color: gray;;
 }
