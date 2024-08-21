@@ -10,7 +10,7 @@ function App(){
     <p>inside app component we have</p> 
   <Title/>
  <Product/>
- <ProductTab/>
+ <ProductTab/> 
 
 
   </div>

@@ -4,6 +4,8 @@
 // let header=document.getElementsByClassName("heading")
 // console.log(header)
 
+// const { command } = require("cli");
+
 // let button=document.getElementById("myId");
 // console.log(button)
 
@@ -54,19 +56,29 @@
 // });
 // let div=document.querySelector("div");
 
-let modebtn = document.querySelector("#mode");
-let body = document.querySelector("body");
-let curMode = "light";
+// let modebtn = document.querySelector("#mode");
+// let body = document.querySelector("body");
+// let curMode = "light";
 
-modebtn.addEventListener("click", () => {
-    if (curMode === "light") {
-        curMode = "dark";
-        body.classList.add("dark");
-        body.classList.remove("light");
-    } else {
-        curMode = "light";
-        body.classList.add("light");
-        body.classList.remove("dark");
-    }
-    console.log(curMode);
-});
+// modebtn.addEventListener("click", () => {
+//     if (curMode === "light") {
+//         curMode = "dark";
+//         body.classList.add("dark");
+//         body.classList.remove("light");
+//     } else {
+//         curMode = "light";
+//         body.classList.add("light");
+//         body.classList.remove("dark");
+//     }
+//     console.log(curMode);
+// });
+console.log("one");
+console.log("two");
+
+setTimeout(()=>{
+    console.log("hello");
+},4000);
+
+
+console.log("three");
+console.log("four");
