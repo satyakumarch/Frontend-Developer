@@ -32,19 +32,38 @@
 
 
 //////////////////class////////////////
-class Student {
-    constructor(name, section) {
-        this.name = name;      // Assign the parameter value to the name property
-        this.section = section; // Assign the parameter value to the section property
+// class Student {
+//     //class constructor to initalize the "name and section" properties
+//     constructor(name, section) {
+//         this.name = name;      
+//         this.section = section; 
+//     }
+    
+//     stu() {
+//         console.log(`My name is ${this.name} and my section name is ${this.section}`);
+//     }
+// }
+
+// // Creating an instance of the Student class
+// let personal = new Student('Satya', 'k22ac');
+
+// // Calling the stu method
+// personal.stu();
+
+
+class teacher{
+    constructor(name,address,subTeach,gender){
+        this.name=name;
+        this.address=address;
+        this.subTeach=subTeach;
+        this.gender=gender;
+        
+    }
+    teach(){
+        console.log(`the teacher name is : ${this.name} \n the address of the teacher is : ${this.address} \nthe subteac is : ${this.subTeach} \n the gender is :${this.gender}`);
     }
     
-    stu() {
-        console.log(`My name is ${this.name} and my section name is ${this.section}`);
-    }
-}
+};
+let stu=new teacher("mukesh","Delhi","English","male");
 
-// Creating an instance of the Student class
-let personal = new Student('Satya', 'k22ac');
-
-// Calling the stu method
-personal.stu();
+stu.teach();
