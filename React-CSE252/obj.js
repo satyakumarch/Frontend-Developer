@@ -50,20 +50,80 @@
 // // Calling the stu method
 // personal.stu();
 
-
-class teacher{
-    constructor(name,address,subTeach,gender){
-        this.name=name;
-        this.address=address;
-        this.subTeach=subTeach;
-        this.gender=gender;
-        
-    }
-    teach(){
-        console.log(`the teacher name is : ${this.name} \n the address of the teacher is : ${this.address} \nthe subteac is : ${this.subTeach} \n the gender is :${this.gender}`);
-    }
+// class Student {
+//     //class constructor to initalize the "name and section" properties
+//     constructor(name, section) {
+//         const stuname = name;      
+//         const stusection = section; 
     
-};
-let stu=new teacher("mukesh","Delhi","English","male");
+    
+//     this.Student=function() {
+//         console.log(`My name is ${this.name} and my section name is ${this.section}`);
+//     };
+// }
+// }
+// // Creating an instance of the Student class
+// let personal = new Student('Satya', 'k22ac');
 
-stu.teach();
+// // Calling the stu method
+// Student();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class teacher{
+//     constructor(name,address,subTeach,gender){
+//         this.name=name;
+//         this.address=address;
+//         this.subTeach=subTeach;
+//         this.gender=gender;
+        
+//     }
+//     teach(){
+//         console.log(`the teacher name is : ${this.name} \n the address of the teacher is : ${this.address} \nthe subteac is : ${this.subTeach} \n the gender is :${this.gender}`);
+//     }
+    
+// };
+// let stu=new teacher("mukesh","Delhi","English","male");
+
+// stu.teach();
+
+function tuesday(movie,actor) {
+   return{
+    mymovie:movie,
+    myactor:actor,
+    tuesday:function(){
+        return `The actor's name is: ${this.myactor}\nThe movie name is: ${this.mymovie}`;
+    }
+   };
+}
+
+// Creating an instance of the Film class
+let week = new tuesday("Sushant Singh Rajput", "Chhichhore");
+
+console.log(week.tuesday());
+
+
+
+// class film {
+//     constructor(name, movie) {
+//         this.name = name;
+//         this.movie = movie;
+//         return name, movie;
+//     }
+// }
+
+// // Calling the function
+// let result = new  film("amar","Geo");
+// console.log(result); 
