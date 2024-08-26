@@ -99,26 +99,26 @@
 
 // stu.teach();
 
-function Tuesday(actor,movie,director,release) {
-   return{
-    myactor:actor,
-    mymovie:movie,
-    mydirector:director,
-    myrelease:release,
-    Tuesday:function(){
-        return `The actor's name is: ${this.myactor}\nThe movie name is: ${this.mymovie} \n the director of the movie is : ${this.mydirector} \n the time to release is : ${this.myrelease}`;
-    }
-   };
-}
+// function Tuesday(actor,movie,director,release) {
+//    return{
+//     myactor:actor,
+//     mymovie:movie,
+//     mydirector:director,
+//     myrelease:release,
+//     Tuesday:function(){
+//         return `The actor's name is: ${this.myactor}\nThe movie name is: ${this.mymovie} \n the director of the movie is : ${this.mydirector} \n the time to release is : ${this.myrelease}`;
+//     }
+//    };
+// }
 
 // Creating an instance of the Film class
-let week = new Tuesday("Sushant Singh Rajput", "Chhichhore","manoj sharma"," 2012");
-let week1 = new Tuesday("mahendra singh", "cricket","ram mohan"," 2014");
+// let week = new Tuesday("Sushant Singh Rajput", "Chhichhore","manoj sharma"," 2012");
+// let week1 = new Tuesday("mahendra singh", "cricket","ram mohan"," 2014");
 
 
-console.log(week.Tuesday());
-console.log("*******************************************************");
-console.log(week1.Tuesday());
+// console.log(week.Tuesday());
+// console.log("*******************************************************");
+// console.log(week1.Tuesday());
 
 
 
@@ -135,3 +135,17 @@ console.log(week1.Tuesday());
 // // Calling the function
 // let result = new  film("amar","Geo");
 // console.log(result); 
+
+////////////////////////////array///////////
+// const fruits=["mango","Gova","Banana","Apple"];
+// console.log(fruits);
+// for (const eat of fruits) {
+//     console.log(eat);
+// }
+
+const fruits=["mango","Gova","Banana","Apple"];
+
+for (const event of fruits) {
+    console.log('Foods:'+event);
+}
+
