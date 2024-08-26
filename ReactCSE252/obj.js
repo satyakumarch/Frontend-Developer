@@ -150,8 +150,43 @@
 // }
 
 
-const item1=["itly","dosa"];
-const item2=item1.slice();
-item1.push("sambar");
-console.log(item1);
-console.log(item2);
+// const item1=["itly","dosa"];
+// const item2=item1.slice();
+// item1.push("sambar");
+// console.log(item1);
+// console.log(item2);
+
+//spread operator
+// const item1=["itly","dosa"];
+// const item2=[...item1];
+// item1.push("sambarr","somasa");
+// console.log(item1);
+// console.log(item2);
+
+
+// const student3=["dosa","vada"];
+// const student4=[...student3,"pongal"];
+
+// console.log('student3:');
+// for (const value of student3) {
+//     console.log(value);
+    
+// }
+// console.log("student4");
+// for (const value of student4) {
+//     console.log(value);
+    
+// }
+
+
+
+//////////REST OPERATOR ///////////////////////
+const items=(item1,item2,item3)=>{
+    return [item1,item2,item3];
+}
+console.log(items(1,2,3,4,5,6));
+
+// const items=(...items)=>{
+//     return items;
+// }
+// console.log(1,2,3,4,5,6,7,8);
