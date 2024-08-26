@@ -143,9 +143,15 @@
 //     console.log(eat);
 // }
 
-const fruits=["mango","Gova","Banana","Apple"];
+// const fruits=["mango","Gova","Banana","Apple"];
 
-for (const event of fruits) {
-    console.log('Foods:'+event);
-}
+// for (const event of fruits) {
+//     console.log('Foods:'+event);
+// }
 
+
+const item1=["itly","dosa"];
+const item2=item1.slice();
+item1.push("sambar");
+console.log(item1);
+console.log(item2);
