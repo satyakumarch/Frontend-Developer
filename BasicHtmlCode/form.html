@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(129, 205, 205);
+            background-repeat: no-repeat;
+            height: 100vh;
+            color:rgb(145, 223, 19);
+            display: flex;
+           justify-content: center;
+           font-size: 30px;
+           align-items: center;
+           background-image: ec;
+           border-radius: 10px;
+        }
+        div{
+            background-color: azure;
+            padding: 20px;
+            border-radius:15px ;
+            width: 600px;
+            
+            
+
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        input[type="text"],input[type="email"],input[type="password"],select,textarea{
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        input[type="submit"],input[type="reset"]{
+            background-color: rgb(86, 220, 220);
+            color: rgb(171, 244, 88);
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+          
+
+        }
+        input:focus,textarea:focus,select:focus{
+            background-color: rgb(154, 214, 135);
+            border:none;
+        }
+        input[type=submit]:hover,input[type=reset]:hover{
+            background-color: rgb(232, 144, 144);
+            transform: scale(1.10);
+            cursor: pointer;
+        }
+        button{
+            font-size: 10px;
+            column-gap: 10px;
+            color: blue;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        option{
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        ::placeholder{
+            color:red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <h1>Sign up</h1>
+        <label for="Name">Name</label>
+        <input type="text" placeholder="Enter your name" ><br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password"><br>
+        <br>
+        <label for="address">Address</label>
+       <textarea row="6" cols="50" id="address"></textarea><br>
+       <br>
+       <label for="email">Email</label>
+       <input type="email" id="email" placeholder="Email"><br>
+       <br>
+       <label for="city">Select city</label>
+       <select name="cities" id="city">
+        <option value="Select">select</option>
+        <option value="Delhi">delhi</option>
+        <option value="Goa">Goa</option>
+        <option value="jalandar">jalandar</option>
+        <option value="punjab">punjab</option>
+        <option value="lucknow">lucknow</option>
+       </select><br><br>
+<label for="gender">Gender</label>
+<input type="radio" value="male" id="checked">Male
+<input type="radio" value="female">Female
+<input type="radio" value="other">Other<br><br>
+<label for="upload">upload file</label>
+<input type="file">
+<br>
+<button>Submit</button>
+
+<button>Reset</button>
+<button>Close</button>
+
+
+
+    </form>
+    
+</div>
+
+</body>
+</html>

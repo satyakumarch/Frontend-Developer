@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <style>
+        input{
+            font-size: 50px;
+            height: 70px;
+            width: 400px;
+            background-color: aquamarine;
+            color: blue;
+            border: 2px solid brown;
+            border-radius: 10px;
+            
+
+
+        }
+    </style>
+    <script type="text/javascript">
+        function show_confirm(){
+            var r=confirm("press a button");
+            if(r==true)
+            {
+                alert("you are OK");
+            }else{
+                alert("you press cancel")
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <input type="submit" onclick="show_confirm()" value="Clicked me"/>
+</body>
+</html>

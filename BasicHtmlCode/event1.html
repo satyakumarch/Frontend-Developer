@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc">
+        This is a container
+    </div>
+    <script>
+        const div=document.getElementById("abc");
+        div.style.height="400px";
+        div.style.width="300px";
+        div.style.color="black";
+        div.style.backgroundColor="blue";
+        div.style.border="15px solid orange "
+        div.style.borderRadius="10px"
+        div.style.fontSize="30px"
+        div.style.alignItems="center";
+        div.style.paddingTop="50px";
+// var z=0;
+//         div.addEventListener("click",abc);
+// function event()
+// {
+//     if(z==0){
+//     div.style.backgroundColor="red";
+//     div.style.borderColor="green";
+//     z=1;
+//     }
+//     else{
+//         div.style.backgroundColor="blue";
+//         div.style.borderColor="orange";
+//         z=0;
+//     }
+// }
+
+
+var z=0;
+        div.addEventListener("mouseleave",abc);
+function event()
+{
+    if(z==0){
+    div.style.backgroundColor="red";
+    div.style.borderColor="green";
+    z=1;
+    }
+    else{
+        div.style.backgroundColor="blue";
+        div.style.borderColor="orange";
+        z=0;
+    }
+}
+
+
+ 
+    </script>
+
+</script>
+</body>
+</html>

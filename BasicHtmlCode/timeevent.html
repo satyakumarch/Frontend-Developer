@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        height: 100px;
+        width: 100px;
+        row-gap: 20px;
+        font-size: 30px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        border: 2px solid red;
+        justify-items: center;
+        align-items: center;
+       
+        margin: 2%;
+    }
+    div{
+        padding: 20px;
+        padding-left: 30px;
+        height: 500px;
+        width: 60%;
+        background-color: beige;
+        border: 2px solid rgb(50, 5, 230);
+        border-radius: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        background-image: url(1.jpg);
+    }
+    h1{
+        color:rgb(9, 245, 60) ;
+    }
+</style>
+<body>
+    <div>
+        <h1>Start  the time</h1>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <p id="demo"></p>
+</div>
+
+    <script>
+        var i;
+        function start(){
+            i=setInterval(datetime,1000);
+        }
+        function datetime()
+        {
+            document.getElementById("demo").innerHTML=new Date();
+            document.getElementById("demo").style.cssText="font-size: 70px; color:red;font-style:italic";
+        }
+        function stop()
+        {
+            clearInterval(i);
+        }
+    
+    </script>
+
+</body>
+</html>

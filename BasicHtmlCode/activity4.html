@@ -1,0 +1,83 @@
+<!-- Dom dynamo dive 
+1 use basic Dom methods like get element by id ,query selector ,append child
+i.	change the text content of a paragraph dynamically  
+ii.	toggle the visibility of the image  with a button click 
+iii.	change the background colour of the web page
+iv.	create a new element and append it to the document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Dynamo Dive</title>
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+    }
+    #toggleButton{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border-radius: 10px;
+
+    }
+    #changeColorButton{
+        height: 100px;
+        width: 100px;
+        background-color: aquamarine;
+        border-radius: 10px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <p id="dynamicParagraph">This is a dynamically changing paragraph.</p>
+  <button id="toggleButton">Toggle Image Visibility</button>
+  <img id="dynamicImage" src="your_image_url" alt="Dynamic Image" style="display: none;">
+  <button id="changeColorButton">Change Background Color</button>
+
+  <script>
+    // Get references to elements
+    const paragraph = document.getElementById('dynamicParagraph');
+    const image = document.getElementById('dynamicImage');
+    const toggleButton = document.getElementById('toggleButton');
+    const changeColorButton = document.getElementById('changeColorButton');
+
+    // Task i: Change the text content of a paragraph dynamically
+    paragraph.textContent = "This paragraph's text has been dynamically changed.";
+
+    // Task ii: Toggle the visibility of the image with a button click
+    toggleButton.addEventListener('click', function() {
+      if (image.style.display === 'none') {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
+
+    // Task iii: Change the background color of the web page
+    changeColorButton.addEventListener('click', function() {
+      const randomColor = getRandomColor();
+      document.body.style.backgroundColor = randomColor;
+    });
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Task iv: Create a new element and append it to the document
+    const newElement = document.createElement('p');
+    newElement.textContent = 'This is a newly created paragraph element.';
+    document.body.appendChild(newElement);
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #full-image {
+            display: none;
+            border-radius: 10px;
+        }
+        #thumbnails{
+height: 200px;
+width: 500px;
+border-radius: 10px;
+        }
+        body{
+            padding-left: 40%;
+        }
+        #show-image-btn{
+            height: 30px;
+            width: 150px;
+            font-weight: 800px;
+            color: red;
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+        #show-image-btn:hover{
+            color: rgb(25, 15, 4);
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div id="thumbnails">
+        <img class="thumbnail" src="1.jpg" alt="Thumbnail 1">
+        <img class="thumbnail" src="2.jpg" alt="Thumbnail 2">
+        <img class="thumbnail" src="3.jpg" alt="Thumbnail 3">
+    </div>
+    <div id="full-image-container">
+        <img id="full-image" src="" alt="Full Image" height="500px" width="600px">
+    </div>
+    <button id="show-image-btn">Show Full Image</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const fullImage = document.getElementById('full-image');
+            const showImageButton = document.getElementById('show-image-btn');
+
+            // Task 1: Add event listener to thumbnails
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    // Task 2: Change full image source to clicked thumbnail source
+                    fullImage.src = thumbnail.src;
+                    fullImage.alt = thumbnail.alt;
+                    // Task 2 (optional): Show full image container when a thumbnail is clicked
+                    document.getElementById('full-image-container').style.display = 'block';
+                });
+            });
+
+            // Task 3: Add event listener to button
+            showImageButton.addEventListener('click', function() {
+                // Task 2 (optional): Toggle visibility of full image container
+                if (fullImage.style.display === 'none') {
+                    fullImage.style.display = 'block';
+                } else {
+                    fullImage.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
