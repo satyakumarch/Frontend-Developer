@@ -32,41 +32,43 @@
 
 
 //////////////////class////////////////
-// class Student {
-//     //class constructor to initalize the "name and section" properties
-//     constructor(name, section) {
-//         this.name = name;      
-//         this.section = section; 
-//     }
+class Student {
+    //class constructor to initalize the "name and section" properties
+    constructor(name, section) {
+        this.name = name;      
+        this.section = section; 
+    }
     
-//     stu() {
-//         console.log(`My name is ${this.name} and my section name is ${this.section}`);
-//     }
-// }
+    stu() {
+        console.log(`My name is ${this.name} and my section name is ${this.section}`);
+    }
+}
 
-// // Creating an instance of the Student class
-// let personal = new Student('Satya', 'k22ac');
 
-// // Calling the stu method
-// personal.stu();
 
-// class Student {
-//     //class constructor to initalize the "name and section" properties
-//     constructor(name, section) {
-//         const stuname = name;      
-//         const stusection = section; 
+//Creating an instance of the Student class
+let personal = new Student('Satya', 'k22ac');
+
+// Calling the stu method
+personal.stu();
+
+class Student {
+    //class constructor to initalize the "name and section" properties
+    constructor(name, section) {
+        const stuname = name;      
+        const stusection = section; 
     
     
-//     this.Student=function() {
-//         console.log(`My name is ${this.name} and my section name is ${this.section}`);
-//     };
-// }
-// }
-// // Creating an instance of the Student class
-// let personal = new Student('Satya', 'k22ac');
+    this.Student=function() {
+        console.log(`My name is ${this.name} and my section name is ${this.section}`);
+    };
+}
+}
+// Creating an instance of the Student class
+let personal = new Student('Satya', 'k22ac');
 
-// // Calling the stu method
-// Student();
+//Calling the stu method
+console.log(Student());
 
 
 
@@ -181,12 +183,18 @@
 
 
 //////////REST OPERATOR ///////////////////////
-const items=(item1,item2,item3)=>{
-    return [item1,item2,item3];
-}
-console.log(items(1,2,3,4,5,6));
-
-// const items=(...items)=>{
-//     return items;
+// const items=(item1,item2,item3)=>{
+//     return [item1,item2,item3];
 // }
-// console.log(1,2,3,4,5,6,7,8);
+// console.log(items(1,2,3,4,5,6));
+
+const items=(...items)=>{
+    return items.reduce((sum,current)=>sum+current,0);
+}
+console.log(items(1,2,3,4,5,6,7,8));
+
+
+/////ARROW
+
+
+
